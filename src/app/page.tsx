@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
-  return <main className="h-[10000px]"></main>;
+  return <main className="h-[5000px]"></main>;
 }

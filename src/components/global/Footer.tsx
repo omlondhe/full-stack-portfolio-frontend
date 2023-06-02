@@ -1,6 +1,6 @@
 "use client";
 
-import "@/styles/components/Footer.css";
+import "@/styles/components/global/Footer.css";
 
 import { Signika } from "next/font/google";
 import { Libre_Barcode_128_Text } from "next/font/google";
@@ -13,7 +13,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { IconButton } from "@mui/material";
+
 import { useState } from "react";
+
 import { InView } from "react-intersection-observer";
 
 const signika = Signika({ subsets: ["latin"], weight: "400" });
@@ -28,37 +30,37 @@ const socialIconsData: {
   icon: JSX.Element;
 }[] = [
   {
-    link: "",
+    link: "https://github.com/omlondhe",
     backgroundColor: "white",
     icon: <GitHubIcon style={{ color: "black" }} />,
   },
   {
-    link: "",
+    link: "https://www.linkedin.com/in/omlondhe",
     backgroundColor: "white",
     icon: <LinkedInIcon style={{ color: "#0B65C2" }} />,
   },
   {
-    link: "",
+    link: "https://twitter.com/omlondhe2133",
     backgroundColor: "white",
     icon: <TwitterIcon style={{ color: "#1C9BEF" }} />,
   },
   {
-    link: "",
+    link: "mailto:oplondhe@gmail.com",
     backgroundColor: "white",
     icon: <EmailOutlinedIcon style={{ color: "#D44E47" }} />,
   },
   {
-    link: "",
+    link: "https://play.google.com/store/apps/developer?id=Om+Londhe&hl=en_IN&gl=US",
     backgroundColor: "white",
     icon: <AndroidIcon style={{ color: "#39D37F" }} />,
   },
   {
-    link: "",
+    link: "https://www.instagram.com/omlondhe2133",
     backgroundColor: "white",
     icon: <InstagramIcon style={{ color: "black" }} />,
   },
   {
-    link: "",
+    link: "https://www.youtube.com/@omlondhe",
     backgroundColor: "white",
     icon: <YouTubeIcon style={{ color: "#FF0000" }} />,
   },
@@ -93,6 +95,8 @@ export default function Footer() {
               >
                 {socialIconsData.map((socialIconData) => (
                   <IconButton
+                    key={socialIconData.link}
+                    onClick={() => window.open(socialIconData.link)}
                     style={{ background: socialIconData.backgroundColor }}
                     className={`footer__main-social-icons rounded-full ${
                       inView

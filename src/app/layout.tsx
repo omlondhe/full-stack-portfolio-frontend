@@ -1,7 +1,8 @@
 import { StateProvider } from "@/redux/StateProvider";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Footer from "@/components/Footer";
+import Footer from "@/components/global/Footer";
+import FloatingNavbar from "@/components/global/FloatingNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} relative`}>
+        <FloatingNavbar />
         <StateProvider>{children}</StateProvider>
         <Footer />
       </body>

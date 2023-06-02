@@ -1,0 +1,49 @@
+.toggleButton {
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.toggleButton-not-in-view {
+  right: -200px;
+}
+
+.toggleButton-in-view {
+  transition-delay: 500ms;
+  right: 20px;
+}
+
+.toggleButton-is-open {
+  transform: rotateZ(270deg) rotateY(360deg);
+}
+
+.toggleButton-is-close {
+  transform: rotate(0);
+}
+
+.toggleButton-row {
+  transition: all 750ms ease-in-out;
+}
+
+.toggleButton-row-is-open:nth-child(1) {
+  transform: rotateZ(225deg) translateX(-6.9px) translateY(-6.9px);
+}
+
+.toggleButton-row-is-close:nth-child(1) {
+  transform: rotateZ(0deg) translateX(0px) translateY(0px);
+}
+
+.toggleButton-row-is-open:nth-child(2) {
+  opacity: 0;
+}
+
+.toggleButton-row-is-close:nth-child(2) {
+  opacity: 1;
+}
+
+.toggleButton-row-is-open:nth-child(3) {
+  transform: rotateZ(-225deg) translateX(-6.9px) translateY(6.9px);
+}
+
+.toggleButton-row-is-close:nth-child(3) {
+  transform: rotateZ(0deg) translateX(0px) translateY(0px);
+}

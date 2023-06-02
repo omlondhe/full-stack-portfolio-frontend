@@ -1,25 +1,26 @@
 .footer {
   background: black;
 }
+
 .footer__main {
   left: 5%;
   top: -50px;
   width: 90%;
-  transition: all 500ms ease-in-out;
-  transition-delay: 150ms;
   overflow: hidden;
 }
 
 .footer__main-not-in-view {
-  transform: translateY(200px);
+  transform: translateY(400px);
 }
 
 .footer__main-in-view {
+  transition: all 500ms ease-in-out;
+  transition-delay: 150ms;
   transform: translateY(0);
 }
 
 .footer__main-social-not-in-view {
-  transform: translateY(-200px);
+  transform: translateY(-80px);
 }
 
 .footer__main-social-in-view {
