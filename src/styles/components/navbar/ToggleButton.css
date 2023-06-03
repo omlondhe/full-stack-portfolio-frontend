@@ -1,15 +1,19 @@
 .toggleButton {
+  right: -100px;
   cursor: pointer;
   transition: all 500ms;
+  animation: toggleButtonEntryAnimation 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
 }
 
-.toggleButton-not-in-view {
-  right: -200px;
-}
-
-.toggleButton-in-view {
-  transition-delay: 500ms;
-  right: 20px;
+@keyframes toggleButtonEntryAnimation {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 20px;
+  }
 }
 
 .toggleButton-is-open {

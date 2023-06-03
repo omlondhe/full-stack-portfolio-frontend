@@ -1,11 +1,16 @@
-.navbar-not-in-view {
+.navbar {
   right: -100px;
+  animation: navbarEntryAnimation 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-.navbar-in-view {
-  right: 0;
-  transition: all 500ms ease-in-out;
-  transition-delay: 250ms;
+@keyframes navbarEntryAnimation {
+  from {
+    right: -100px;
+  }
+  to {
+    right: 0;
+  }
 }
 
 .navbar-open {

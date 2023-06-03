@@ -1,0 +1,68 @@
+.hero {
+  height: 750px;
+  overflow: hidden;
+}
+
+.hero__imageBlob {
+  width: 400px;
+  margin: 40px;
+  clip-path: url("#hero__imageBlob");
+}
+
+.hero__blob-image {
+  animation: heroBlobImageAnimation 2s forwards;
+  animation-delay: 750ms;
+  transform: translateY(750px);
+}
+
+.hero__blob-image svg {
+  filter: drop-shadow(0 0 11px #ffa50044);
+}
+
+.hero__bottom-wave {
+  bottom: -150px;
+  animation: heroBottomWaveAnimation 2s forwards;
+  animation-delay: 250ms;
+}
+
+.hero__title {
+  transform: translateY(-300px);
+  animation: heroTitleAnimation 2s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes heroBottomWaveAnimation {
+  from {
+    bottom: -150px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes heroBlobImageAnimation {
+  0% {
+    transform: translateY(750px);
+  }
+  50% {
+    transform: translateY(20px) scale(1.7);
+  }
+  70% {
+    transform: rotate(360deg);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1.1);
+  }
+}
+
+@keyframes heroTitleAnimation {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
