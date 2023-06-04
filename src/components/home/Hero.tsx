@@ -1,32 +1,300 @@
+"use client";
+
 import "@/styles/components/home/Hero.css";
 import heroWave from "../../../public/hero-wave.svg";
 import Image from "next/image";
+import { Lexend_Deca, Capriola } from "next/font/google";
+import { useCallback, useEffect, useState } from "react";
+
+const lexendDecaFont = Lexend_Deca({ subsets: ["latin"] });
+const capriolaFont = Capriola({ subsets: ["latin"], weight: "400" });
 
 function Hero() {
+  const [scrollTop, setScrollTop] = useState<number>(0);
+
+  const handleScroll = useCallback((event: Event) => {
+    setScrollTop(scrollY);
+  }, []);
+
+  useEffect(() => {
+    addEventListener("scroll", handleScroll);
+    return () => removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="hero relative">
       <div className="hero__title text-center mt-10">
-        <p className="text-5xl font-bold mb-7">Om Prashant Londhe</p>
-        <p className="text-4xl font-semibold">Full Stack Developer</p>
-      </div>
-      <div className="hero__blob-image h-96 w-96 mx-auto">
-        <svg
-          viewBox="0 0 200 200"
-          xmlns="http://www.w3.org/2000/svg"
-          className="object-cover overflow-hidden"
+        <p
+          className={`${lexendDecaFont.className} text-5xl font-bold mb-7 uppercase`}
         >
-          <clipPath id="clip-path">
-            <path
-              d="M38.2,-51.2C48.8,-44.9,56.1,-32.8,64.7,-18.2C73.4,-3.6,83.5,13.4,82.5,30C81.5,46.6,69.5,62.8,53.9,72.4C38.3,82,19.1,84.9,2.5,81.5C-14.2,78.1,-28.3,68.3,-36.7,56.4C-45.1,44.4,-47.7,30.4,-51.9,17C-56.1,3.6,-62,-9.2,-61.2,-22.4C-60.4,-35.6,-52.9,-49.1,-41.6,-55.2C-30.3,-61.2,-15.2,-59.8,-0.7,-58.8C13.8,-57.9,27.7,-57.5,38.2,-51.2Z"
-              transform="translate(100 100)"
-            />
-          </clipPath>
+          Om Prashant Londhe
+        </p>
+        <p className={`${capriolaFont.className} text-4xl font-semibold`}>
+          Full Stack Developer
+        </p>
+      </div>
+      <div className="hero__background-text-div">
+        <section className="hero__background-text-section">
+          <div className="hero__background-text">
+            <h2
+              style={{
+                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 0.5))`,
+              }}
+            >
+              <span>Full Stack</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>ReactJS</span>
+              <span>NextJS</span>
+              <span>NodeJS</span>
+              <span>MongoDB</span>
+              <span>ExpressJS</span>
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 1.5))`,
+              }}
+            >
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>ReactJS</span>
+              <span>NextJS</span>
+              <span>NodeJS</span>
+              <span>MongoDB</span>
+              <span>ExpressJS</span>
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 2.5))`,
+              }}
+            >
+              <span>Backend</span>
+              <span>ReactJS</span>
+              <span>NextJS</span>
+              <span>NodeJS</span>
+              <span>MongoDB</span>
+              <span>ExpressJS</span>
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>Frontend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 3.5))`,
+              }}
+            >
+              <span>ReactJS</span>
+              <span>NextJS</span>
+              <span>NodeJS</span>
+              <span>MongoDB</span>
+              <span>ExpressJS</span>
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 4.5))`,
+              }}
+            >
+              <span>NextJS</span>
+              <span>NodeJS</span>
+              <span>MongoDB</span>
+              <span>ExpressJS</span>
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>ReactJS</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 5.5))`,
+              }}
+            >
+              <span>NodeJS</span>
+              <span>MongoDB</span>
+              <span>ExpressJS</span>
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>NextJS</span>
+              <span>ReactJS</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 6.5))`,
+              }}
+            >
+              <span>MongoDB</span>
+              <span>ExpressJS</span>
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>NodeJS</span>
+              <span>NextJS</span>
+              <span>ReactJS</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 7.5))`,
+              }}
+            >
+              <span>ExpressJS</span>
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>MongoDB</span>
+              <span>NodeJS</span>
+              <span>NextJS</span>
+              <span>ReactJS</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 8.5))`,
+              }}
+            >
+              <span>Firebase</span>
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>ExpressJS</span>
+              <span>MongoDB</span>
+              <span>NodeJS</span>
+              <span>NextJS</span>
+              <span>ReactJS</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 9.5))`,
+              }}
+            >
+              <span>MERN</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>Firebase</span>
+              <span>ExpressJS</span>
+              <span>MongoDB</span>
+              <span>NodeJS</span>
+              <span>NextJS</span>
+              <span>ReactJS</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 10.5))`,
+              }}
+            >
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>MERN</span>
+              <span>Firebase</span>
+              <span>ExpressJS</span>
+              <span>MongoDB</span>
+              <span>NodeJS</span>
+              <span>NextJS</span>
+              <span>ReactJS</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+            <h2
+              style={{
+                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
+                transform: `translateX(calc(0% - ${scrollTop}px * 11.5))`,
+              }}
+            >
+              <span>TypeScript</span>
+              <span>JavaScript</span>
+              <span>MERN</span>
+              <span>Firebase</span>
+              <span>ExpressJS</span>
+              <span>MongoDB</span>
+              <span>NodeJS</span>
+              <span>NextJS</span>
+              <span>ReactJS</span>
+              <span>Frontend</span>
+              <span>Backend</span>
+              <span>Full Stack</span>
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div className="hero__blob-image w-fit mx-auto object-cover">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 500 500"
+          width="100%"
+          id="blobSvg"
+          className="opacity-100"
+        >
           <image
-            clip-path="url(#clip-path)"
-            xlinkHref={`/blob-inner-image.jpeg`}
-            height="200"
-            width="200"
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            clip-path="url(#blob-clip-path)"
+            href="/blob-inner-image.jpeg"
+            preserveAspectRatio="always"
           ></image>
+          <clipPath id="blob-clip-path">
+            <path id="blob">
+              <animate
+                attributeName="d"
+                dur="11000ms"
+                repeatCount="indefinite"
+                values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"
+              ></animate>
+            </path>
+          </clipPath>
         </svg>
       </div>
       <div className="hero__bottom-wave w-screen object-cover absolute left-0 h-[200px] overflow-hidden">

@@ -1,5 +1,6 @@
 .footer {
-  background: black;
+  /* background: linear-gradient(#ffa500, white); */
+  background-color: black;
 }
 
 .footer__main {

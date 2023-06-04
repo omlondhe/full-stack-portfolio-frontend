@@ -11,24 +11,108 @@
 
 .hero__blob-image {
   animation: heroBlobImageAnimation 2s forwards;
-  animation-delay: 750ms;
+  animation-delay: 1s;
   transform: translateY(750px);
 }
 
 .hero__blob-image svg {
-  filter: drop-shadow(0 0 11px #ffa50044);
+  width: 500px;
+  height: 500px;
 }
 
 .hero__bottom-wave {
   bottom: -150px;
   animation: heroBottomWaveAnimation 2s forwards;
-  animation-delay: 250ms;
+  animation-delay: 500ms;
 }
 
 .hero__title {
   transform: translateY(-300px);
   animation: heroTitleAnimation 2s forwards;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
+  position: relative;
+  z-index: 10;
+}
+
+.hero__title p {
+  --hero__title-p-shadow-color: rgb(255, 255, 255);
+  text-shadow: 0px 7px 0 var(--hero__title-p-shadow-color),
+    7px 7px 0 var(--hero__title-p-shadow-color),
+    -7px 7px 0 var(--hero__title-p-shadow-color),
+    0px -7px 0 var(--hero__title-p-shadow-color),
+    7px -7px 0 var(--hero__title-p-shadow-color),
+    -7px -7px 0 var(--hero__title-p-shadow-color);
+}
+
+.hero__background-text-div {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0 !important;
+  height: 100%;
+  width: 100vw;
+  animation: heroBackgroundTextAnimation 3s forwards;
+}
+
+@keyframes heroBackgroundTextAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero__background-text-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero__background-text {
+  position: relative;
+  transform: skewY(345deg) translateY(-200px);
+  text-align: center;
+}
+
+.hero__background-text h2 {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 8em;
+  color: black;
+  pointer-events: none;
+  line-height: 1em;
+  white-space: nowrap;
+  font-weight: bolder;
+}
+
+.hero__background-text h2 span {
+  color: rgb(175, 175, 175);
+  margin: 0 10px;
+}
+
+.hero__background-text h2 span:nth-child(odd) {
+  animation: textColorAnimation 4s infinite;
+}
+
+@keyframes textColorAnimation {
+  0%,
+  100% {
+    color: rgba(253, 193, 104, 0.7);
+  }
+  50% {
+    color: rgb(175, 175, 175);
+  }
+}
+
+.hero__background-text h2 span:nth-child(even) {
+  color: transparent;
+  -webkit-text-stroke: 2px gray;
 }
 
 @keyframes heroBottomWaveAnimation {
@@ -44,17 +128,8 @@
   0% {
     transform: translateY(750px);
   }
-  50% {
-    transform: translateY(20px) scale(1.7);
-  }
-  70% {
-    transform: rotate(360deg);
-  }
-  90% {
-    transform: scale(1.1);
-  }
   100% {
-    transform: translateY(0) scale(1.1);
+    transform: translateY(0);
   }
 }
 
@@ -64,5 +139,12 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero__blob-image svg {
+    width: 100vw;
+    height: 100vw;
   }
 }

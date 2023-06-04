@@ -1,12 +1,24 @@
 "use client";
 
 import "@/styles/components/global/FloatingNavbar.css";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import ToggleButton from "../navbar/ToggleButton";
 import Link from "next/link";
 
 function FloatingNavbar() {
   const [navbarIsOpen, setNavbarIsOpen] = useState<boolean>(false);
+
+  const handleKeyPress = useCallback((ev: globalThis.KeyboardEvent) => {
+    if (ev.key === "Escape") setNavbarIsOpen(false);
+    if (ev.code === "KeyM") setNavbarIsOpen(true);
+  }, []);
+
+  useEffect(() => {
+    addEventListener("keydown", handleKeyPress, false);
+    return () => {
+      removeEventListener("keydown", handleKeyPress, false);
+    };
+  }, [handleKeyPress]);
 
   return (
     <nav
