@@ -1,0 +1,87 @@
+.hero__background-text-div {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0 !important;
+  height: 100%;
+  width: 100vw;
+  animation: heroBackgroundTextAnimation 3s forwards;
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+@keyframes heroBackgroundTextAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero__background-text-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: right;
+}
+
+.hero__background-text {
+  position: relative;
+  transform: skewY(345deg) translateY(500px);
+  float: right;
+  text-align: right;
+}
+
+.hero__background-text h2 {
+  text-align: right;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 8em;
+  color: black;
+  pointer-events: none;
+  line-height: 1em;
+  white-space: nowrap;
+  font-weight: bolder;
+  pointer-events: none;
+}
+
+.hero__background-text h2 span {
+  color: rgb(175, 175, 175);
+  margin: 0 10px;
+}
+
+.hero__background-text h2 span:nth-child(odd) {
+  animation: textColorAnimation 5s infinite;
+}
+
+@keyframes textColorAnimation {
+  0%,
+  100% {
+    color: rgba(253, 193, 104, 0.7);
+  }
+  50% {
+    color: rgb(175, 175, 175);
+  }
+}
+
+.hero__background-text h2 span:nth-child(even) {
+  color: transparent;
+  -webkit-text-stroke: 2px gray;
+}
+.hero__background-text h2 span:nth-child(even) {
+  animation: borderTextColorAnimation 5s infinite;
+}
+
+@keyframes borderTextColorAnimation {
+  0%,
+  100% {
+    -webkit-text-stroke-color: gray;
+  }
+  50% {
+    -webkit-text-stroke-color: rgba(253, 193, 104, 0.7);
+  }
+}

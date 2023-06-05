@@ -1,29 +1,16 @@
-"use client";
-
 import "@/styles/components/home/Hero.css";
 import heroWave from "../../../public/hero-wave.svg";
 import Image from "next/image";
 import { Lexend_Deca, Capriola } from "next/font/google";
-import { useCallback, useEffect, useState } from "react";
+import HeroBackgroundText from "./HeroBackgroundText";
 
 const lexendDecaFont = Lexend_Deca({ subsets: ["latin"] });
 const capriolaFont = Capriola({ subsets: ["latin"], weight: "400" });
 
 function Hero() {
-  const [scrollTop, setScrollTop] = useState<number>(0);
-
-  const handleScroll = useCallback((event: Event) => {
-    setScrollTop(scrollY);
-  }, []);
-
-  useEffect(() => {
-    addEventListener("scroll", handleScroll);
-    return () => removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="hero relative">
-      <div className="hero__title text-center mt-10">
+      <div className="hero__title text-center mt-10 p-5">
         <p
           className={`${lexendDecaFont.className} text-5xl font-bold mb-7 uppercase`}
         >
@@ -33,241 +20,8 @@ function Hero() {
           Full Stack Developer
         </p>
       </div>
-      <div className="hero__background-text-div">
-        <section className="hero__background-text-section">
-          <div className="hero__background-text">
-            <h2
-              style={{
-                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 0.5))`,
-              }}
-            >
-              <span>Full Stack</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>ReactJS</span>
-              <span>NextJS</span>
-              <span>NodeJS</span>
-              <span>MongoDB</span>
-              <span>ExpressJS</span>
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 1.5))`,
-              }}
-            >
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>ReactJS</span>
-              <span>NextJS</span>
-              <span>NodeJS</span>
-              <span>MongoDB</span>
-              <span>ExpressJS</span>
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 2.5))`,
-              }}
-            >
-              <span>Backend</span>
-              <span>ReactJS</span>
-              <span>NextJS</span>
-              <span>NodeJS</span>
-              <span>MongoDB</span>
-              <span>ExpressJS</span>
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>Frontend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 3.5))`,
-              }}
-            >
-              <span>ReactJS</span>
-              <span>NextJS</span>
-              <span>NodeJS</span>
-              <span>MongoDB</span>
-              <span>ExpressJS</span>
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 4.5))`,
-              }}
-            >
-              <span>NextJS</span>
-              <span>NodeJS</span>
-              <span>MongoDB</span>
-              <span>ExpressJS</span>
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>ReactJS</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 5.5))`,
-              }}
-            >
-              <span>NodeJS</span>
-              <span>MongoDB</span>
-              <span>ExpressJS</span>
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>NextJS</span>
-              <span>ReactJS</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 6.5))`,
-              }}
-            >
-              <span>MongoDB</span>
-              <span>ExpressJS</span>
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>NodeJS</span>
-              <span>NextJS</span>
-              <span>ReactJS</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 7.5))`,
-              }}
-            >
-              <span>ExpressJS</span>
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>MongoDB</span>
-              <span>NodeJS</span>
-              <span>NextJS</span>
-              <span>ReactJS</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 8.5))`,
-              }}
-            >
-              <span>Firebase</span>
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>ExpressJS</span>
-              <span>MongoDB</span>
-              <span>NodeJS</span>
-              <span>NextJS</span>
-              <span>ReactJS</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 9.5))`,
-              }}
-            >
-              <span>MERN</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>Firebase</span>
-              <span>ExpressJS</span>
-              <span>MongoDB</span>
-              <span>NodeJS</span>
-              <span>NextJS</span>
-              <span>ReactJS</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 10.5))`,
-              }}
-            >
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>MERN</span>
-              <span>Firebase</span>
-              <span>ExpressJS</span>
-              <span>MongoDB</span>
-              <span>NodeJS</span>
-              <span>NextJS</span>
-              <span>ReactJS</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-            <h2
-              style={{
-                textShadow: `-${scrollTop}px 100px 0 rgba(0, 0, 0, 0.07)`,
-                transform: `translateX(calc(0% - ${scrollTop}px * 11.5))`,
-              }}
-            >
-              <span>TypeScript</span>
-              <span>JavaScript</span>
-              <span>MERN</span>
-              <span>Firebase</span>
-              <span>ExpressJS</span>
-              <span>MongoDB</span>
-              <span>NodeJS</span>
-              <span>NextJS</span>
-              <span>ReactJS</span>
-              <span>Frontend</span>
-              <span>Backend</span>
-              <span>Full Stack</span>
-            </h2>
-          </div>
-        </section>
-      </div>
-      <div className="hero__blob-image w-fit mx-auto object-cover">
+      <HeroBackgroundText />
+      <div className={`hero__blob-image w-fit mx-auto object-cover`}>
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -281,7 +35,7 @@ function Hero() {
             y="0"
             width="100%"
             height="100%"
-            clip-path="url(#blob-clip-path)"
+            clipPath="url(#blob-clip-path)"
             href="/blob-inner-image.jpeg"
             preserveAspectRatio="always"
           ></image>
@@ -296,6 +50,7 @@ function Hero() {
             </path>
           </clipPath>
         </svg>
+        H
       </div>
       <div className="hero__bottom-wave w-screen object-cover absolute left-0 h-[200px] overflow-hidden">
         <Image

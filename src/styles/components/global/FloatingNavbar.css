@@ -49,6 +49,12 @@
 .link-is-open:nth-child(5) {
   transition-delay: 1150ms;
 }
+.link-is-open:nth-child(6) {
+  transition-delay: 1250ms;
+}
+.link-is-open:nth-child(7) {
+  transition-delay: 1350ms;
+}
 
 .link-is-close {
   transform: translateX(0);
@@ -68,6 +74,12 @@
 }
 .link-is-close:nth-child(5) {
   transition-delay: 500ms;
+}
+.link-is-close:nth-child(6) {
+  transition-delay: 600ms;
+}
+.link-is-close:nth-child(7) {
+  transition-delay: 700ms;
 }
 
 .link-is-close {

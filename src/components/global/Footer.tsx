@@ -14,8 +14,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { IconButton } from "@mui/material";
 
-import { useState } from "react";
-
 import { InView } from "react-intersection-observer";
 
 const signika = Signika({ subsets: ["latin"], weight: "400" });
@@ -32,47 +30,83 @@ const socialIconsData: {
   {
     link: "https://github.com/omlondhe",
     backgroundColor: "white",
-    icon: <GitHubIcon style={{ color: "black" }} />,
+    icon: (
+      <GitHubIcon
+        className="social-icons"
+        style={{ color: "black", fontSize: 30 }}
+      />
+    ),
   },
   {
     link: "https://www.linkedin.com/in/omlondhe",
     backgroundColor: "white",
-    icon: <LinkedInIcon style={{ color: "#0B65C2" }} />,
+    icon: (
+      <LinkedInIcon
+        className="social-icons"
+        style={{ color: "#0B65C2", fontSize: 30 }}
+      />
+    ),
   },
   {
     link: "https://twitter.com/omlondhe2133",
     backgroundColor: "white",
-    icon: <TwitterIcon style={{ color: "#1C9BEF" }} />,
+    icon: (
+      <TwitterIcon
+        className="social-icons"
+        style={{ color: "#1C9BEF", fontSize: 30 }}
+      />
+    ),
   },
   {
     link: "mailto:oplondhe@gmail.com",
     backgroundColor: "white",
-    icon: <EmailOutlinedIcon style={{ color: "#D44E47" }} />,
+    icon: (
+      <EmailOutlinedIcon
+        className="social-icons"
+        style={{ color: "#D44E47", fontSize: 30 }}
+      />
+    ),
   },
   {
     link: "https://play.google.com/store/apps/developer?id=Om+Londhe&hl=en_IN&gl=US",
     backgroundColor: "white",
-    icon: <AndroidIcon style={{ color: "#39D37F" }} />,
+    icon: (
+      <AndroidIcon
+        className="social-icons"
+        style={{ color: "#39D37F", fontSize: 30 }}
+      />
+    ),
   },
   {
     link: "https://www.instagram.com/omlondhe2133",
     backgroundColor: "white",
-    icon: <InstagramIcon style={{ color: "black" }} />,
+    icon: (
+      <InstagramIcon
+        className="social-icons"
+        style={{ color: "black", fontSize: 30 }}
+      />
+    ),
   },
   {
     link: "https://www.youtube.com/@omlondhe",
     backgroundColor: "white",
-    icon: <YouTubeIcon style={{ color: "#FF0000" }} />,
+    icon: (
+      <YouTubeIcon
+        className="social-icons"
+        style={{ color: "#FF0000", fontSize: 30 }}
+      />
+    ),
   },
 ];
 
 export default function Footer() {
-  const [inView, setInView] = useState(false);
-
   return (
-    <InView onChange={setInView}>
+    <InView>
       {({ ref, inView }) => (
-        <footer ref={ref} className="footer h-[550px] w-full relative shadow">
+        <footer
+          ref={ref}
+          className="footer h-[550px] w-full relative shadow mt-96"
+        >
           <section
             className={`footer__main pt-10 pb-10 pl-5 pr-5 rounded-lg absolute shadow bg-white border ${
               inView ? "footer__main-in-view" : "footer__main-not-in-view"

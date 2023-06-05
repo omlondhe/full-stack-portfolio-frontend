@@ -65,6 +65,14 @@ function FloatingNavbar() {
           className={`link text-white text-2xl ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
+          href={`/blog`}
+        >
+          Blog
+        </Link>
+        <Link
+          className={`link text-white text-2xl ${
+            navbarIsOpen ? "link-is-open" : "link-is-close"
+          }`}
           href={`/contact`}
         >
           Contact

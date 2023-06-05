@@ -30,6 +30,16 @@
   transition-delay: 800ms;
 }
 
+.social-icons {
+  transition: all 500ms;
+  border-bottom: 2px solid transparent;
+}
+
+.social-icons:hover {
+  transform: scale(1.15) rotate(-5deg) translateY(-5px);
+  border-bottom: 2px solid;
+}
+
 /* .footer__main-social-icons {
   border: 0.2px solid !important;
 } */
