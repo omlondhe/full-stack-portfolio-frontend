@@ -50,7 +50,6 @@ function Hero() {
             </path>
           </clipPath>
         </svg>
-        H
       </div>
       <div className="hero__bottom-wave w-screen object-cover absolute left-0 h-[200px] overflow-hidden">
         <Image
