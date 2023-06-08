@@ -8,7 +8,7 @@ const monotonFont = Monoton({ subsets: ["latin"], weight: "400" });
 
 function Projects() {
   return (
-    <div className="bg-white">
+    <div className="bg-white relative">
       <ProjectsTitle monotonFont={monotonFont} />
       <ProjectsData />
       <ProjectsTechSection />

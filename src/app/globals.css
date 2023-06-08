@@ -20,9 +20,6 @@ html,
 body {
   scroll-behavior: smooth;
 }
-body {
-  overflow: hidden;
-}
 
 html {
   overflow: scroll;
