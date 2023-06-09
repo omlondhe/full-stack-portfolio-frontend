@@ -1,0 +1,9 @@
+.projects__visit-button {
+  width: 179px;
+  overflow: hidden;
+  transition: all 250ms;
+}
+
+.projects__visit-button:hover {
+  width: 210px;
+}

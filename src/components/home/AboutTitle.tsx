@@ -6,10 +6,21 @@ import { useCallback, useEffect, useState } from "react";
 const monotonFont = Monoton({ subsets: ["latin"], weight: "400" });
 
 function AboutTitle() {
+  let lastScrollY = 0;
+  let ticking = false;
   const [scrollTop, setScrollTop] = useState<number>(0);
 
   const handleScroll = useCallback((_: Event) => {
-    setScrollTop(scrollY);
+    if (scrollY <= 850) {
+      lastScrollY = scrollY;
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setScrollTop(lastScrollY);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
   }, []);
 
   useEffect(() => {
@@ -18,7 +29,7 @@ function AboutTitle() {
   }, []);
 
   return (
-    <div className="bg-[#ffa500] whitespace-nowrap">
+    <div className="bg-[#ffa500] whitespace-nowrap overflow-hidden">
       <p
         className={`${monotonFont.className} text-9xl text-white font-extrabold`}
         style={{ transform: `translateX(-${scrollTop * 5}px)` }}

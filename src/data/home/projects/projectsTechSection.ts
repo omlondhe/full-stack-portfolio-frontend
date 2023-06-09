@@ -152,7 +152,7 @@ export const projectsTechSectionData: ProjectsTechDataType[] = [
     image: "/projects/vercel.svg",
     title: "Vercel",
     content:
-      "I was learning NextJS and got to know that it was acquired bya company called as Vercel some years ago. This encouraged me to learn more about Vercel, I got to know that Vercel has their own hosting platform having great support for almost every JavaSCript framework, since then I am hosting all my JavaScript web applications on Vercel only!",
+      "I was learning NextJS and got to know that it was acquired by a company called as Vercel some years ago. This encouraged me to learn more about Vercel, I got to know that Vercel has their own hosting platform having great support for almost every JavaSCript framework, since then I am hosting all my JavaScript web applications on Vercel only!",
     type: "Hosting",
   },
   {

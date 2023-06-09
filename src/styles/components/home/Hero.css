@@ -27,7 +27,7 @@
 }
 
 .hero__title {
-  transform: translateY(-300px);
+  transform: translateY(-500px);
   animation: heroTitleAnimation 2s forwards;
   animation-delay: 1.5s;
   position: relative;
@@ -36,14 +36,6 @@
   place-items: center;
   text-align: center;
   width: 100%;
-}
-
-.hero__title p {
-  background-color: white;
-  width: fit-content;
-  padding: 5px 10px;
-  border-radius: 11px;
-  border: 1px solid lightgray;
 }
 
 /* .hero__title p {
@@ -78,7 +70,7 @@
 
 @keyframes heroTitleAnimation {
   from {
-    transform: translateY(-300px);
+    transform: translateY(-500px);
   }
   to {
     transform: translateY(0);

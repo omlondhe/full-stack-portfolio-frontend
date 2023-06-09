@@ -21,7 +21,7 @@
 }
 
 .footer__main-social-not-in-view {
-  transform: translateY(-80px);
+  transform: translateY(-150px);
 }
 
 .footer__main-social-in-view {
@@ -73,7 +73,7 @@
 }
 
 .footer__main-social-icons-not-in-view {
-  transform: translateY(-100px);
+  transform: translateY(-150px);
 }
 
 .footer__main-social-icons-in-view {

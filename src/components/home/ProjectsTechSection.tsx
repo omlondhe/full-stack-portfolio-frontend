@@ -3,6 +3,8 @@
 import { projectsTechSectionData } from "@/data/home/projects/projectsTechSection";
 import ProjectsTech from "./ProjectsTech";
 import { createRef, useEffect, useState } from "react";
+import "@/styles/components/home/ProjectsTechSection.css";
+import Link from "next/link";
 
 const calcDynamicHeight = (objectWidth: number) => {
   const vw = window.innerWidth;
@@ -50,7 +52,10 @@ function ProjectsTechSection() {
           style={{
             position: "sticky",
             top: 0,
-            background: "radial-gradient(#FFA50077, transparent, transparent)",
+            background: "url('/projectTechsBackground.svg')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
           }}
         >
           <div
@@ -75,6 +80,22 @@ function ProjectsTechSection() {
                   type={data.type}
                 />
               ))}
+
+              <div
+                className="relative grid place-items-center w-[350px] h-[350px] overflow-visible backdrop-blur-lg bg-[#ffffff55] border-2 border-white p-5 m-2 object-cover flex-shrink-0 shadow rounded-[100%] bg-[url('/blob-inner-image.jpeg')]"
+                style={{
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "none",
+                  backgroundSize: "cover",
+                }}
+              >
+                <Link
+                  href={"/projects"}
+                  className="projects__visit-button absolute text-lg font-semibold -bottom-4 mt-11 uppercase backdrop-blur-md bg-[#FFFFFFcc] border-gray-200 border rounded-full px-4 py-1 whitespace-nowrap"
+                >
+                  Visit Projects&nbsp;&nbsp;&nbsp;-&gt;
+                </Link>
+              </div>
             </div>
           </div>
         </div>

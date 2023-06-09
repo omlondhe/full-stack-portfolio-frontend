@@ -30,7 +30,7 @@
 
 .hero__background-text {
   position: relative;
-  transform: skewY(345deg) translateY(500px);
+  transform: skewY(345deg) translateY(550px);
   float: right;
   text-align: right;
 }

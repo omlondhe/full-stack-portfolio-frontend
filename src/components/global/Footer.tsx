@@ -33,7 +33,7 @@ const socialIconsData: {
     icon: (
       <GitHubIcon
         className="social-icons"
-        style={{ color: "black", fontSize: 30 }}
+        style={{ color: "black", fontSize: 35 }}
       />
     ),
   },
@@ -43,7 +43,7 @@ const socialIconsData: {
     icon: (
       <LinkedInIcon
         className="social-icons"
-        style={{ color: "#0B65C2", fontSize: 30 }}
+        style={{ color: "#0B65C2", fontSize: 35 }}
       />
     ),
   },
@@ -53,7 +53,7 @@ const socialIconsData: {
     icon: (
       <TwitterIcon
         className="social-icons"
-        style={{ color: "#1C9BEF", fontSize: 30 }}
+        style={{ color: "#1C9BEF", fontSize: 35 }}
       />
     ),
   },
@@ -63,7 +63,7 @@ const socialIconsData: {
     icon: (
       <EmailOutlinedIcon
         className="social-icons"
-        style={{ color: "#D44E47", fontSize: 30 }}
+        style={{ color: "#D44E47", fontSize: 35 }}
       />
     ),
   },
@@ -73,7 +73,7 @@ const socialIconsData: {
     icon: (
       <AndroidIcon
         className="social-icons"
-        style={{ color: "#39D37F", fontSize: 30 }}
+        style={{ color: "#39D37F", fontSize: 35 }}
       />
     ),
   },
@@ -83,7 +83,7 @@ const socialIconsData: {
     icon: (
       <InstagramIcon
         className="social-icons"
-        style={{ color: "black", fontSize: 30 }}
+        style={{ color: "black", fontSize: 35 }}
       />
     ),
   },
@@ -93,7 +93,7 @@ const socialIconsData: {
     icon: (
       <YouTubeIcon
         className="social-icons"
-        style={{ color: "#FF0000", fontSize: 30 }}
+        style={{ color: "#FF0000", fontSize: 35 }}
       />
     ),
   },

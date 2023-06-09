@@ -6,7 +6,7 @@ const ubuntuFont = Ubuntu({ subsets: ["latin"], weight: "500" });
 
 function ProjectsTech({ image, title, content, type }: ProjectsTechDataType) {
   return (
-    <div className="relative flex flex-col min-w-[500px] max-w-lg w-xl min-h-[500px] h-fit overflow-hidden bg-white border p-5 rounded-md m-2 object-cover mr-[75px] flex-shrink-0 shadow">
+    <div className="relative flex flex-col min-w-[200px] max-w-lg w-screen min-h-[500px] h-fit overflow-hidden backdrop-blur-lg bg-[#ffffff55] border border-white p-5 rounded-md m-2 object-cover mr-[75px] flex-shrink-0 shadow">
       <h2
         className={`${ubuntuFont.className} text-2xl mb-5 text-center border border-x-0 border-t-0 pb-4`}
       >
