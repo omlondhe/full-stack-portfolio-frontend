@@ -54,7 +54,7 @@ function ProjectsTechSection() {
             top: 0,
             background: "url('/projectTechsBackground.svg')",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
+            backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >

@@ -1,0 +1,9 @@
+.achievements__visit-button {
+  width: 227px;
+  overflow: hidden;
+  transition: all 250ms;
+}
+
+.achievements__visit-button:hover {
+  width: 260px;
+}
