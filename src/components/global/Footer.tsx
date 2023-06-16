@@ -103,12 +103,9 @@ export default function Footer() {
   return (
     <InView>
       {({ ref, inView }) => (
-        <footer
-          ref={ref}
-          className="footer h-[550px] w-full relative shadow mt-96"
-        >
+        <footer ref={ref} className="footer h-[550px] relative mt-96">
           <section
-            className={`footer__main pt-10 pb-10 pl-5 pr-5 rounded-lg absolute shadow bg-white border ${
+            className={`footer__main pt-10 pb-10 pl-5 pr-5 rounded-2xl absolute bg-white border-4 border-black ${
               inView ? "footer__main-in-view" : "footer__main-not-in-view"
             }`}
           >
@@ -122,7 +119,7 @@ export default function Footer() {
               <p
                 className={`uppercase text-xl mb-2 select-none ${signika.className}`}
               >
-                Let's connect using
+                My public profiles
               </p>
               <div
                 className={`flex align-middle justify-center w-fit mx-auto gap-5 border-t-2 pt-2 overflow-hidden max-w-full flex-wrap`}

@@ -1,6 +1,9 @@
 .footer {
-  /* background: linear-gradient(#ffa500, white); */
   background-color: black;
+  border-top-left-radius: 21px;
+  border-top-right-radius: 21px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer__main {
@@ -31,18 +34,16 @@
 }
 
 .social-icons {
+  position: relative;
   transition: all 500ms;
   border-bottom: 2px solid transparent;
+  border-radius: 5px;
 }
 
 .social-icons:hover {
-  transform: scale(1.15) rotate(-5deg) translateY(-5px);
+  transform: rotate(-5deg) translateY(-5px);
   border-bottom: 2px solid;
 }
-
-/* .footer__main-social-icons {
-  border: 0.2px solid !important;
-} */
 
 .footer__main-social-icons:nth-child(1) {
   transition-delay: 1.5s;

@@ -5,7 +5,10 @@ import ExperienceCard from "./ExperienceCard";
 
 function Experience() {
   return (
-    <div className="relative flex flex-col min-h-screen overflow-hidden bg-slate-50 px-1">
+    <div
+      id="experience"
+      className="relative flex flex-col min-h-screen overflow-hidden bg-slate-50 px-1"
+    >
       <ExperienceTitle />
       <div className="flex flex-col justify-center items-center w-full">
         {experienceData.map((data, index) => (

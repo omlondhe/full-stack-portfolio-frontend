@@ -5,6 +5,10 @@ import { useCallback, useEffect, useState } from "react";
 import ToggleButton from "../navbar/ToggleButton";
 import Link from "next/link";
 
+import { Rubik_Vinyl } from "next/font/google";
+
+const tiltPrimsFont = Rubik_Vinyl({ subsets: ["latin"], weight: "400" });
+
 function FloatingNavbar() {
   const [navbarIsOpen, setNavbarIsOpen] = useState<boolean>(false);
 
@@ -24,50 +28,52 @@ function FloatingNavbar() {
     <nav
       className={`navbar fixed z-50 bg-black overflow-hidden ${
         navbarIsOpen ? "navbar-open" : "navbar-close"
-      }`}
+      } ${navbarIsOpen ? "border-none" : "border-t-4 border-l-4"}`}
     >
       <section
         className={`flex flex-col justify-around align-middle text-center absolute top-0 right-0 w-screen h-screen`}
       >
         <Link
-          className={`link text-white text-2xl ${
+          className={`${
+            tiltPrimsFont.className
+          } w-fit mx-auto link text-white text-5xl ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
           href={`/`}
         >
-          Home
+          <p>Home</p>
         </Link>
         <Link
-          className={`link text-white text-2xl ${
+          className={`${
+            tiltPrimsFont.className
+          } w-fit mx-auto link text-white text-5xl ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
           href={`/projects`}
         >
-          Projects
+          <p>Projects</p>
         </Link>
         <Link
-          className={`link text-white text-2xl ${
+          className={`${
+            tiltPrimsFont.className
+          } w-fit mx-auto link text-white text-5xl ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
-          href={`/experience`}
+          onClick={() => setNavbarIsOpen(false)}
+          href={`/#experience`}
         >
-          Experience
+          <p>Experience</p>
         </Link>
         <Link
-          className={`link text-white text-2xl ${
+          className={`${
+            tiltPrimsFont.className
+          } w-fit mx-auto link text-white text-5xl ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
+          onClick={() => setNavbarIsOpen(false)}
           href={`/achievements`}
         >
-          Achievements
-        </Link>
-        <Link
-          className={`link text-white text-2xl ${
-            navbarIsOpen ? "link-is-open" : "link-is-close"
-          }`}
-          href={`/contact`}
-        >
-          Contact
+          <p>Achievements</p>
         </Link>
       </section>
       <ToggleButton

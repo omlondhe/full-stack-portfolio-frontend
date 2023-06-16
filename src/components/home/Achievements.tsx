@@ -19,9 +19,9 @@ function Achievements() {
       >
         <Link
           href={"/achievements"}
-          className="achievements__visit-button absolute text-lg font-semibold -bottom-4 mt-11 uppercase backdrop-blur-md bg-[#FFFFFFcc] border-gray-200 border rounded-full px-4 py-1 whitespace-nowrap"
+          className="achievements__visit-button absolute text-lg font-semibold -bottom-4 mt-11 uppercase backdrop-blur-md bg-[#FFFFFF] border-gray border-2 rounded-full px-4 py-1 whitespace-nowrap"
         >
-          Visit Achievements&nbsp;&nbsp;&nbsp;-&gt;
+          Visit Achievements&nbsp;&nbsp;&nbsp; -&gt;
         </Link>
       </div>
     </div>

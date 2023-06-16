@@ -56,7 +56,7 @@
   transition-delay: 1350ms;
 }
 
-.link-is-close {
+.link-is-open {
   transform: translateX(0);
 }
 
@@ -84,4 +84,30 @@
 
 .link-is-close {
   transform: translateX(-100vw);
+}
+
+.link > p {
+  position: relative;
+  transition-delay: none !important;
+  transition: all 444ms ease-in-out;
+}
+
+.link > p:hover {
+  transform: rotate(-10deg);
+}
+
+.link > p::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: #ffa500;
+  transition: all 444ms ease-in-out;
+  border-radius: 100px;
+}
+
+.link > p:hover::after {
+  width: 100%;
 }
