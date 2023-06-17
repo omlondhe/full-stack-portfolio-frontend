@@ -39,6 +39,7 @@ function FloatingNavbar() {
           } w-fit mx-auto link text-white text-5xl ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
+          onClick={() => setNavbarIsOpen(false)}
           href={`/`}
         >
           <p>Home</p>
