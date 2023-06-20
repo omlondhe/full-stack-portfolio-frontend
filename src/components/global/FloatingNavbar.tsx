@@ -4,12 +4,14 @@ import "@/styles/components/global/FloatingNavbar.css";
 import { useCallback, useEffect, useState } from "react";
 import ToggleButton from "../navbar/ToggleButton";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { Rubik_Vinyl } from "next/font/google";
 
 const tiltPrimsFont = Rubik_Vinyl({ subsets: ["latin"], weight: "400" });
 
 function FloatingNavbar() {
+  const pathname = usePathname();
   const [navbarIsOpen, setNavbarIsOpen] = useState<boolean>(false);
 
   const handleKeyPress = useCallback((ev: globalThis.KeyboardEvent) => {
@@ -42,7 +44,15 @@ function FloatingNavbar() {
           onClick={() => setNavbarIsOpen(false)}
           href={`/`}
         >
-          <p>Home</p>
+          <p
+            className={`${
+              pathname === "/"
+                ? "-rotate-[10deg] border-b-4 border-[#ffa500]"
+                : ""
+            }`}
+          >
+            Home
+          </p>
         </Link>
         <Link
           className={`${
@@ -50,9 +60,18 @@ function FloatingNavbar() {
           } w-fit mx-auto link text-white text-5xl ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
+          onClick={() => setNavbarIsOpen(false)}
           href={`/projects`}
         >
-          <p>Projects</p>
+          <p
+            className={`${
+              pathname === "/projects"
+                ? "-rotate-[10deg] border-b-4 border-[#ffa500]"
+                : ""
+            }`}
+          >
+            Projects
+          </p>
         </Link>
         <Link
           className={`${
@@ -74,7 +93,15 @@ function FloatingNavbar() {
           onClick={() => setNavbarIsOpen(false)}
           href={`/achievements`}
         >
-          <p>Achievements</p>
+          <p
+            className={`${
+              pathname === "/achievements"
+                ? "-rotate-[10deg] border-b-4 border-[#ffa500]"
+                : ""
+            }`}
+          >
+            Achievements
+          </p>
         </Link>
       </section>
       <ToggleButton
