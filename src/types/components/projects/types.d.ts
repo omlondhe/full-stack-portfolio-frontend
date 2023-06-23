@@ -9,4 +9,5 @@ export type ProjectCardType = {
     | "Web app - Frontend only"
     | "Mobile app"
     | "Game";
+  imageLink: string;
 };
