@@ -10,4 +10,5 @@ export type ProjectCardType = {
     | "Mobile app"
     | "Game";
   imageLink: string;
+  rank: number;
 };

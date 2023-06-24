@@ -1,9 +1,18 @@
 import React from "react";
 import ExperienceTitle from "./ExperienceTitle";
-import { experienceData } from "@/data/home/experience/experience";
 import ExperienceCard from "./ExperienceCard";
+import { URL } from "@/data/dataURL";
+import { ExperienceType } from "@/types/data/experience/types";
+// import { experienceData } from "@/data/home/experience/experience";
 
-function Experience() {
+async function Experience() {
+  const experienceDataResponse = await fetch(`${URL}/get-all-experiences`, {
+    next: {
+      revalidate: 10800,
+    },
+  });
+  const experienceData: ExperienceType[] = await experienceDataResponse.json();
+
   return (
     <div
       id="experience"

@@ -1,11 +1,19 @@
+// import { achievementsData } from "@/data/achievements/achievements";
 import AchievementCard from "@/components/achievements/AchievementCard";
-import { achievementsData } from "@/data/achievements/achievements";
+import { URL } from "@/data/dataURL";
+import { AchievementDataType } from "@/types/data/achievements/types";
 
 import { Rubik } from "next/font/google";
 
 const readexProFont = Rubik({ subsets: ["latin"] });
 
-function Achievements() {
+async function Achievements() {
+  const achievementsResponse = await fetch(`${URL}/get-all-achievements`, {
+    next: { revalidate: 10800 },
+  });
+  const achievementsData: AchievementDataType[] =
+    await achievementsResponse.json();
+
   return (
     <div className="relative flex flex-col items-center gap-10 p-5 pt-52 bg-slate-50">
       <h1

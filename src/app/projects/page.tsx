@@ -1,7 +1,16 @@
 import ProjectCard from "@/components/projects/ProjectCard";
-import { projectsData } from "@/data/projects/projects";
+import { URL } from "@/data/dataURL";
+import { ProjectCardType } from "@/types/components/projects/types";
+// import { projectsData } from "@/data/projects/projects";
 
-function Projects() {
+async function Projects() {
+  const projectsDataResponse = await fetch(`${URL}/get-all-projects`, {
+    next: {
+      revalidate: 10800,
+    },
+  });
+  const projectsData: ProjectCardType[] = await projectsDataResponse.json();
+
   return (
     <div
       className="relative flex flex-col w-screen h-screen overflow-scroll"
@@ -11,6 +20,7 @@ function Projects() {
     >
       {projectsData.map((projectData) => (
         <ProjectCard
+          rank={projectData.rank}
           title={projectData.title}
           description={projectData.description}
           liveLink={projectData.liveLink}

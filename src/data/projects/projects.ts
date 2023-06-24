@@ -20,6 +20,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Frontend only",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FGoogle%20Docs%20Clone.png?alt=media&token=f83e1d67-13b8-4fea-9b4c-b3d1cd80829e",
+    rank: 21,
   },
   {
     title: "Dashboard design of Food App",
@@ -38,6 +39,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Frontend only",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FDashboard%20design%20of%20Food%20App.png?alt=media&token=02ee3432-6911-4024-b555-5358159b7c3e",
+    rank: 20,
   },
   {
     title: "List Reordering Demo",
@@ -57,6 +59,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Frontend only",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FList%20Reordering%20Demo.png?alt=media&token=84c293e8-c41f-4dec-901d-bd41a22522ea",
+    rank: 19,
   },
   {
     title: "LongShot AI Dashboard",
@@ -76,6 +79,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Frontend only",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FLongShot%20AI%20Dashboard.png?alt=media&token=bb2e884b-29d2-4144-a28a-e5d2dc28322d",
+    rank: 18,
   },
   {
     title: "ConMan: Container Manager",
@@ -104,6 +108,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FConMan.png?alt=media&token=25e6bb46-3450-4020-b6e7-c8c4b7a3eae3",
+    rank: 17,
   },
   {
     title: "ScanAttendance",
@@ -126,6 +131,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FScanAttendance.png?alt=media&token=4669cc46-d926-4b6d-b6c2-610fb18b8499",
+    rank: 16,
   },
   {
     title: "SignCounter",
@@ -145,6 +151,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FSignCounter.png?alt=media&token=90f04d90-82e9-4e9f-8b8e-e6e52c6f5ed3",
+    rank: 15,
   },
   {
     title: "Indian Unique Medical Card",
@@ -169,6 +176,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FIndian%20Unique%20Medical%20Card.png?alt=media&token=ee84932f-23cb-4614-b73c-c97133e71891",
+    rank: 14,
   },
   {
     title: "Chess Master",
@@ -191,6 +199,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FChessMaster.png?alt=media&token=4fe2b976-79f7-4241-a8d8-c2097ada24b9",
+    rank: 13,
   },
   {
     title: "Amazon Clone",
@@ -212,6 +221,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Frontend only",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FAmazon%20Clone.png?alt=media&token=8a40f045-564e-485d-8e97-c7c64aa6987d",
+    rank: 12,
   },
   {
     title: "Serverless Multiplayer Tic Tac Toe",
@@ -231,6 +241,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FServerless%20Multiplayer%20Tic%20Tac%20Toe.png?alt=media&token=b7b58613-116a-4026-9039-3069e460d173",
+    rank: 11,
   },
   {
     title: "Gmail Clone",
@@ -249,6 +260,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FGmail%20Clone.png?alt=media&token=5b422bcc-9656-4a7a-8f13-c2914add5bb5",
+    rank: 10,
   },
   {
     title: "Google Search Clone",
@@ -260,6 +272,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FGoogle%20Search%20Clone.png?alt=media&token=9539abc2-ed7e-47c4-b546-02c0e3d76566",
+    rank: 9,
   },
   {
     title: "COVID-19 Tracker",
@@ -277,6 +290,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FCOVID-19%20Tracker.png?alt=media&token=0e43e41c-ab63-4a4d-a4a0-5e45036dd9f2",
+    rank: 8,
   },
   {
     title: "ToDo App",
@@ -288,6 +302,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Full Stack",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FToDo%20App.png?alt=media&token=d8c2375f-46fb-458f-89b8-1b9fa6e35b48",
+    rank: 7,
   },
   {
     title: "Analog Clock",
@@ -299,6 +314,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Web app - Frontend only",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FAnalogue%20clock.png?alt=media&token=6207d2a2-635d-4dd6-b069-95e4da362ceb",
+    rank: 6,
   },
   {
     title: "IFeel",
@@ -310,6 +326,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Mobile app",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FIFeel.png?alt=media&token=e85065a5-bde8-40d4-a45c-a573096d88f3",
+    rank: 5,
   },
   {
     title: "React Messenger",
@@ -322,6 +339,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Mobile app",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FReact%20Messanger.png?alt=media&token=2ff66384-7604-427c-b012-843a2b2d71c8",
+    rank: 4,
   },
   {
     title: "Meme4U",
@@ -333,6 +351,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Mobile app",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FMeme4U.png?alt=media&token=ada5e7e8-250c-44a0-b6d8-ed18de0cc7f9",
+    rank: 3,
   },
   {
     title: "Tables",
@@ -344,6 +363,7 @@ export const projectsData: ProjectCardType[] = [
     type: "Mobile app",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FTables.png?alt=media&token=8142cf78-6c97-4902-9e8d-0a20dd0c8303",
+    rank: 2,
   },
   {
     title: "Save Your Side",
@@ -356,5 +376,6 @@ export const projectsData: ProjectCardType[] = [
     type: "Game",
     imageLink:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-5e536.appspot.com/o/projects%2FSaveYourSide.png?alt=media&token=59858b22-cf33-4f0f-ab49-d1c9ad83904c",
+    rank: 1,
   },
 ];

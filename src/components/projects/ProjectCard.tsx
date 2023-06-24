@@ -52,7 +52,7 @@ function ProjectCard({
         </div>
         <div className="flex justify-between gap-2 items-center my-5">
           {githubLink ? (
-            <Link href={githubLink}>
+            <Link target="_blank" href={githubLink}>
               <GithubIcon />
             </Link>
           ) : (
@@ -60,6 +60,7 @@ function ProjectCard({
           )}
           {liveLink ? (
             <Link
+              target="_blank"
               href={liveLink}
               className="bg-black px-3 py-1 text-white rounded-full"
             >
