@@ -50,7 +50,7 @@
 }
 
 .hero__background-text h2 span {
-  color: rgb(175, 175, 175);
+  color: rgb(175, 175, 175, 0.4);
   margin: 0 10px;
 }
 
@@ -64,7 +64,7 @@
     color: rgba(253, 193, 104, 0.7);
   }
   50% {
-    color: rgb(175, 175, 175);
+    color: rgb(175, 175, 175, 0.4);
   }
 }
 

@@ -8,7 +8,7 @@ function ExperienceTitle() {
       className={`bg-[#ffa500] whitespace-nowrap overflow-hidden align-center h-fit w-fit mx-auto`}
     >
       <p
-        className={`${monotonFont.className} text-9xl text-white w-full`}
+        className={`${monotonFont.className} text-9xl w-full text-white dark:text-black`}
         style={{
           textOrientation: "upright",
           writingMode: "vertical-lr",

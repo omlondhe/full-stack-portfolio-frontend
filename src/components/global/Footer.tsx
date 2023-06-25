@@ -103,9 +103,12 @@ export default function Footer() {
   return (
     <InView>
       {({ ref, inView }) => (
-        <footer ref={ref} className="footer h-[550px] relative mt-96">
+        <footer
+          ref={ref}
+          className="footer h-[550px] relative mt-96 bg-gray-200 dark:bg-gray-800"
+        >
           <section
-            className={`footer__main pt-10 pb-10 pl-5 pr-5 rounded-2xl absolute bg-white border-4 border-black ${
+            className={`footer__main pt-10 pb-10 pl-5 pr-5 rounded-2xl absolute bg-white border-4 border-gray-200 dark:border-gray-800 dark:bg-black ${
               inView ? "footer__main-in-view" : "footer__main-not-in-view"
             }`}
           >

@@ -7,7 +7,7 @@ import "@/styles/pages/home.css";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative bg-white dark:bg-black">
       <Hero />
       <About />
       <Projects />

@@ -52,7 +52,11 @@ function ProjectCard({
         </div>
         <div className="flex justify-between gap-2 items-center my-5">
           {githubLink ? (
-            <Link target="_blank" href={githubLink}>
+            <Link
+              target="_blank"
+              href={githubLink}
+              className="rounded-full bg-white"
+            >
               <GithubIcon />
             </Link>
           ) : (
@@ -62,7 +66,7 @@ function ProjectCard({
             <Link
               target="_blank"
               href={liveLink}
-              className="bg-black px-3 py-1 text-white rounded-full"
+              className="bg-black px-3 py-1 text-white rounded-full border"
             >
               Live Demo
             </Link>

@@ -16,7 +16,7 @@ function ExperienceCard({
 }: ExperienceType) {
   return (
     <div
-      className={`flex flex-col items-center bg-white max-w-[550px] min-w-[270px] w-full p-5 mb-4 border rounded-md ${
+      className={`flex flex-col items-center max-w-[550px] min-w-[270px] w-full p-5 mb-4 border rounded-md bg-white dark:bg-[#141414] ${
         endDate === "Present" ? "border-[#FFA500]" : "border-gray-500"
       }`}
     >

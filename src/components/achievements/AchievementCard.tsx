@@ -26,7 +26,7 @@ function AchievementCard({
           ))}
         </div>
         {link ? (
-          <p className="backdrop-blur-sm px-1 rounded-lg text-[10px] text-gray-700 mt-5 leading-5 absolute w-fit top-4 -right-9 uppercase rotate-90">{`Click for more`}</p>
+          <p className="backdrop-blur-sm px-1 rounded-lg text-[10px] text-gray-500 mt-5 leading-7 absolute w-fit top-4 -right-9 uppercase rotate-90">{`Click for more`}</p>
         ) : (
           <></>
         )}

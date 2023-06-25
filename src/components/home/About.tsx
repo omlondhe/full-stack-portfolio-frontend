@@ -7,10 +7,10 @@ const ubuntuFont = Ubuntu({ subsets: ["latin"], weight: "500" });
 
 function About() {
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-black">
       <AboutTitle />
       <div className="p-5 max-w-5xl text-justify mx-auto">
-        <p className="text-lg text-slate-600 leading-loose">
+        <p className="text-lg leading-loose text-slate-600 dark:text-slate-400">
           Hello, my name is{" "}
           <span
             className={`${ubuntuFont.className} text-2xl uppercase about__text-specials`}

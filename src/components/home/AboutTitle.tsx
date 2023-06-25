@@ -31,7 +31,7 @@ function AboutTitle() {
   return (
     <div className="bg-[#ffa500] whitespace-nowrap overflow-hidden">
       <p
-        className={`${monotonFont.className} text-9xl text-white font-extrabold`}
+        className={`${monotonFont.className} text-9xl font-extrabold text-white dark:text-black`}
         style={{ transform: `translateX(-${scrollTop}px)` }}
       >
         Who Am I? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Who Am I?

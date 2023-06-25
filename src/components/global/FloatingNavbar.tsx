@@ -28,9 +28,13 @@ function FloatingNavbar() {
 
   return (
     <nav
-      className={`navbar fixed z-50 bg-black overflow-hidden ${
+      className={`navbar fixed z-50 overflow-hidden bg-black dark:bg-white ${
         navbarIsOpen ? "navbar-open" : "navbar-close"
-      } ${navbarIsOpen ? "border-none" : "border-t-4 border-l-4"}`}
+      } ${
+        navbarIsOpen
+          ? "border-none"
+          : "border-t-4 border-l-4 border-white dark:border-t-4 dark:border-l-4 dark:border-black"
+      }`}
     >
       <section
         className={`flex flex-col justify-around align-middle text-center absolute top-0 right-0 w-screen h-screen`}
@@ -38,7 +42,7 @@ function FloatingNavbar() {
         <Link
           className={`${
             tiltPrimsFont.className
-          } w-fit mx-auto link text-white text-5xl ${
+          } w-fit mx-auto link text-5xl text-white dark:text-black ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
           onClick={() => setNavbarIsOpen(false)}
@@ -57,7 +61,7 @@ function FloatingNavbar() {
         <Link
           className={`${
             tiltPrimsFont.className
-          } w-fit mx-auto link text-white text-5xl ${
+          } w-fit mx-auto link text-5xl text-white dark:text-black ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
           onClick={() => setNavbarIsOpen(false)}
@@ -76,7 +80,7 @@ function FloatingNavbar() {
         <Link
           className={`${
             tiltPrimsFont.className
-          } w-fit mx-auto link text-white text-5xl ${
+          } w-fit mx-auto link text-5xl text-white dark:text-black ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
           onClick={() => setNavbarIsOpen(false)}
@@ -87,7 +91,7 @@ function FloatingNavbar() {
         <Link
           className={`${
             tiltPrimsFont.className
-          } w-fit mx-auto link text-white text-5xl ${
+          } w-fit mx-auto link text-5xl text-white dark:text-black ${
             navbarIsOpen ? "link-is-open" : "link-is-close"
           }`}
           onClick={() => setNavbarIsOpen(false)}

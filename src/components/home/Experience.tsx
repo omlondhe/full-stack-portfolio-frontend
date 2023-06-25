@@ -16,7 +16,7 @@ async function Experience() {
   return (
     <div
       id="experience"
-      className="relative flex flex-col min-h-screen overflow-hidden bg-slate-50 px-1"
+      className="relative flex flex-col min-h-screen overflow-hidden px-1 bg-white dark:bg-black"
     >
       <ExperienceTitle />
       <div className="flex flex-col justify-center items-center w-full">

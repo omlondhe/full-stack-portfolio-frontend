@@ -15,9 +15,9 @@ async function Achievements() {
     await achievementsResponse.json();
 
   return (
-    <div className="relative flex flex-col items-center gap-10 p-5 pt-52 bg-slate-50">
+    <div className="relative flex flex-col items-center gap-10 p-5 pt-52 bg-slate-50 dark:bg-black">
       <h1
-        className={`${readexProFont.className} rounded-lg z-10 w-full text-center py-5 mb-5 text-5xl font-bold bg-[#ffffffaa] sticky top-0 backdrop-blur-sm`}
+        className={`${readexProFont.className} rounded-lg z-10 w-full text-center py-5 mb-5 text-5xl font-bold bg-[#ffffffaa] dark:bg-[#000000aa] sticky top-0 backdrop-blur-sm`}
       >
         Achievements
       </h1>

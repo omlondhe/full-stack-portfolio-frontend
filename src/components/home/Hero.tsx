@@ -9,7 +9,7 @@ const capriolaFont = Capriola({ subsets: ["latin"], weight: "400" });
 
 function Hero() {
   return (
-    <div className="hero relative grid place-items-center">
+    <div className="hero relative grid place-items-center bg-white dark:bg-black">
       <div className="hero__title text-center mt-10 p-5">
         <p
           className={`${lexendDecaFont.className} text-4xl font-bold mb-7 uppercase shadow border border-[#FFFFFF77] px-5 py-2 backdrop-blur-md rounded-lg`}

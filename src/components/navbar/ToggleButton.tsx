@@ -11,7 +11,7 @@ function ToggleButton({ navbarIsOpen, setNavbarIsOpen }: ToggleButtonType) {
     >
       <div
         className={`toggleButton-row w-full h-[3px] rounded-full ${
-          navbarIsOpen ? "bg-red-500" : "bg-white"
+          navbarIsOpen ? "bg-red-500" : "bg-white dark:bg-black"
         } ${
           navbarIsOpen
             ? "toggleButton-row-is-open"
@@ -20,7 +20,7 @@ function ToggleButton({ navbarIsOpen, setNavbarIsOpen }: ToggleButtonType) {
       ></div>
       <div
         className={`toggleButton-row w-full h-[3px] rounded-full ${
-          navbarIsOpen ? "bg-red-500" : "bg-white"
+          navbarIsOpen ? "bg-red-500" : "bg-white dark:bg-black"
         } ${
           navbarIsOpen
             ? "toggleButton-row-is-open"
@@ -29,7 +29,7 @@ function ToggleButton({ navbarIsOpen, setNavbarIsOpen }: ToggleButtonType) {
       ></div>
       <div
         className={`toggleButton-row w-full h-[3px] rounded-full ${
-          navbarIsOpen ? "bg-red-500" : "bg-white"
+          navbarIsOpen ? "bg-red-500" : "bg-white dark:bg-black"
         } ${
           navbarIsOpen
             ? "toggleButton-row-is-open"

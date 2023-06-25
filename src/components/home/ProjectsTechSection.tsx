@@ -82,7 +82,7 @@ function ProjectsTechSection() {
               ))}
 
               <div
-                className="relative grid place-items-center w-[350px] h-[350px] overflow-visible backdrop-blur-lg bg-[#ffffff55] border-2 border-white p-5 m-2 object-cover flex-shrink-0 shadow rounded-[100%] bg-[url('/blob-inner-image.jpeg')]"
+                className="relative grid place-items-center w-[350px] h-[350px] overflow-visible backdrop-blur-lg border-2 p-5 m-2 object-cover flex-shrink-0 shadow rounded-[100%] bg-[#ffffff55] dark:bg-[#00000055] bg-[url('/blob-inner-image.jpeg')] border-white dark:border-[#555555]"
                 style={{
                   backgroundPosition: "center center",
                   backgroundRepeat: "none",
@@ -91,7 +91,7 @@ function ProjectsTechSection() {
               >
                 <Link
                   href={"/projects"}
-                  className="projects__visit-button absolute text-lg font-semibold -bottom-4 mt-11 uppercase backdrop-blur-md bg-[#FFFFFFcc] border-gray-200 border rounded-full px-4 py-1 whitespace-nowrap"
+                  className="projects__visit-button absolute text-lg font-semibold -bottom-4 mt-11 uppercase backdrop-blur-md bg-[#FFFFFFcc] dark:bg-[#000000cc] border-gray-200 dark:border-[#555555] border rounded-full px-4 py-1 whitespace-nowrap"
                 >
                   Visit Projects&nbsp;&nbsp;&nbsp;-&gt;
                 </Link>

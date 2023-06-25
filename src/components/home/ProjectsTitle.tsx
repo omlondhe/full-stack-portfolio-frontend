@@ -27,7 +27,7 @@ function Projects({ monotonFont }: any) {
   }, []);
 
   return (
-    <div className="bg-white overflow-hidden">
+    <div className="overflow-hidden bg-white dark:bg-black">
       <div className="h-[150px] whitespace-nowrap float-right">
         <p
           className={`${monotonFont.className} text-9xl text-[#FFA500]`}

@@ -5,7 +5,10 @@ const ubuntuFont = Ubuntu({ subsets: ["latin"], weight: "500" });
 function ProjectsData() {
   return (
     <div className="p-5 max-w-5xl text-justify mx-auto">
-      <p className="text-lg text-slate-600" style={{ lineHeight: 2 }}>
+      <p
+        className="text-lg text-slate-600 dark:text-slate-400"
+        style={{ lineHeight: 2 }}
+      >
         I call myself a{" "}
         <span
           className={`${ubuntuFont.className} text-2xl uppercase projects__text-specials`}
