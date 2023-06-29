@@ -23,6 +23,7 @@ async function Achievements() {
       </h1>
       {achievementsData.map((achievement, index) => (
         <AchievementCard
+          key={achievement.text}
           index={(index + 1).toString()}
           text={achievement.text}
           link={achievement.link}

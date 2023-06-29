@@ -82,7 +82,7 @@ function ProjectsTechSection() {
               ))}
 
               <div
-                className="relative grid place-items-center w-[350px] h-[350px] overflow-visible backdrop-blur-lg border-2 p-5 m-2 object-cover flex-shrink-0 shadow rounded-[100%] bg-[#ffffff55] dark:bg-[#00000055] bg-[url('/blob-inner-image.jpeg')] border-white dark:border-[#555555]"
+                className="relative grid place-items-center w-[350px] h-[350px] overflow-visible backdrop-blur-lg border-2 p-5 m-2 object-cover flex-shrink-0 shadow rounded-[100%] bg-[#ffffff55] dark:bg-[#00000055] bg-[url('/project.jpeg')] border-white dark:border-[#555555]"
                 style={{
                   backgroundPosition: "center center",
                   backgroundRepeat: "none",

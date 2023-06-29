@@ -3,6 +3,7 @@ import { ProjectCardType } from "@/types/components/projects/types";
 import Link from "next/link";
 import { GithubIcon } from "@/components/icons/Icons";
 import { Fragment } from "react";
+import Image from "next/image";
 
 function ProjectCard({
   title,
@@ -19,13 +20,19 @@ function ProjectCard({
         <div
           className={`relative border border-gray-400 rounded-2xl overflow-hidden h-full w-full p-2 grid place-items-center`}
         >
-          <img
+          <Image
             src={imageLink}
+            fill
             alt={`${title} background`}
             className="absolute top-0 left-0 h-full w-full object-cover z-0 blur filter"
           />
-          <div className="relative rounded-lg overflow-hidden object-contain z-10 drop-shadow">
-            <img src={imageLink} alt={title} className="h-full w-full" />
+          <div className="rounded-lg overflow-hidden z-10">
+            <Image
+              fill
+              src={imageLink}
+              alt={title}
+              className="h-full w-full object-contain rounded-lg"
+            />
           </div>
         </div>
       </div>
@@ -37,15 +44,21 @@ function ProjectCard({
             .split(".")
             .map((sentence) =>
               sentence.length ? (
-                <li className="text-justify">{`${sentence}.`}</li>
+                <li
+                  className="text-justify"
+                  key={sentence}
+                >{`${sentence}.`}</li>
               ) : (
-                <Fragment></Fragment>
+                <Fragment key={sentence}></Fragment>
               )
             )}
         </ul>
         <div className="flex gap-2 items-center my-5 flex-wrap">
           {techStack.map((tech) => (
-            <p className="bg-[#ffa50055] border-[#ffa500aa] border-2 px-2 rounded-full">
+            <p
+              key={tech}
+              className="bg-[#ffa50055] border-[#ffa500aa] border-2 px-2 rounded-full"
+            >
               {tech}
             </p>
           ))}

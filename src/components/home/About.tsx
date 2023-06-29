@@ -341,7 +341,7 @@ function About() {
           >
             skills
           </span>{" "}
-          that I find relevant and emerging. Don't forget to go through the
+          that I find relevant and emerging. Don&apos;t forget to go through the
           whole web application and dive into amazing world of tech from my shoe
           <span
             className={`${ubuntuFont.className} text-2xl uppercase about__text-specials`}

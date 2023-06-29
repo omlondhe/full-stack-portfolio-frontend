@@ -22,7 +22,9 @@ function AchievementCard({
         <p className="text-lg">{`${text}`}</p>
         <div className="flex flex-wrap gap-2 mt-5">
           {categories.map((category) => (
-            <p className="bg-[#FFA50055] px-3 rounded-full">{category}</p>
+            <p className="bg-[#FFA50055] px-3 rounded-full" key={category}>
+              {category}
+            </p>
           ))}
         </div>
         {link ? (

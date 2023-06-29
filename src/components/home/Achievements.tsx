@@ -5,7 +5,7 @@ function Achievements() {
   return (
     <div className="grid place-items-center py-20 bg-white dark:bg-black">
       <div
-        className="relative grid place-items-center w-[350px] h-[350px] overflow-visible backdrop-blur-lg bg-[#ffffff55] dark:bg-[#00000055] border-2 border-white dark:border-[#555555] p-5 m-2 object-cover flex-shrink-0 shadow rounded-[100%] bg-[url('/blob-inner-image.jpeg')]"
+        className="relative grid place-items-center w-[350px] h-[350px] overflow-visible backdrop-blur-lg bg-[#ffffff55] dark:bg-[#00000055] border-2 border-white dark:border-[#555555] p-5 m-2 object-cover flex-shrink-0 shadow rounded-[100%] bg-[url('/pool2.jpeg')]"
         style={{
           backgroundPosition: "center center",
           backgroundRepeat: "none",

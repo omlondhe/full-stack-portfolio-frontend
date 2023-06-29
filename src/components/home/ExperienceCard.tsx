@@ -42,7 +42,11 @@ function ExperienceCard({
       <div className="mt-5 w-full px-5">
         <ul>
           {description.map((line) => (
-            <li className="list-item" style={{ listStyleType: "circle" }}>
+            <li
+              className="list-item"
+              key={line}
+              style={{ listStyleType: "circle" }}
+            >
               {line}
             </li>
           ))}
@@ -50,7 +54,9 @@ function ExperienceCard({
       </div>
       <div className="mt-3 w-full flex items-center justify-center flex-wrap">
         {skills.map((skill) => (
-          <p className="bg-[#FFA50055] m-2 px-3 rounded-full">{skill}</p>
+          <p className="bg-[#FFA50055] m-2 px-3 rounded-full" key={skill}>
+            {skill}
+          </p>
         ))}
       </div>
     </div>

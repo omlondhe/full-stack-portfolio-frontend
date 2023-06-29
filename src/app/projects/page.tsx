@@ -20,6 +20,7 @@ async function Projects() {
     >
       {projectsData.map((projectData) => (
         <ProjectCard
+          key={projectData.rank}
           rank={projectData.rank}
           title={projectData.title}
           description={projectData.description}
